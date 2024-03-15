@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Aniket",
+    "createdBy": "Aniket",
+    "createdOn": "14-03-2024",
+    "version": "2.0",
+    "lifeCycle": "Second",
+    "status": "checked",
+    "language": "English",
+    "readyForPublish": "True",
+    "bookmarksEdited": "True",
+    "tag": "published"
+  },
+  {
+    "name": "John",
+    "createdBy": "Tom",
+    "createdOn": "13-03-2024",
+    "version": "4.0",
+    "lifeCycle": "Third",
+    "status": "Completed",
+    "language": "Spanish",
+    "readyForPublish": "True",
+    "bookmarksEdited": "True",
+    "tag": "published"
+  },
+  {
+    "name": "Adam",
+    "createdBy": "Mat",
+    "createdOn": "12-03-2024",
+    "version": "6.0",
+    "lifeCycle": "Fourth",
+    "status": "Completed",
+    "language": "Spanish",
+    "readyForPublish": "True",
+    "bookmarksEdited": "True",
+    "tag": "published"
+  }
+]

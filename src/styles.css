@@ -1,0 +1,40 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 100;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.w100p {
+    width: 100%;
+}
+
+.h50 {
+    height: 50px;
+}
+
+.ft-wt-500 {
+    font-weight: 500;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.mat-expansion-panel {
+    color: white;
+    background: #CF682F !important;
+}
+
+.mat-expansion-panel-content .mat-list-item-content {
+    color: white;
+}
+
+.mat-expansion-indicator::after {
+    color: white;
+}

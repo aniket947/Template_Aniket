@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm section">
+            <h3>Address Form</h3>
+            <form class="formwidth" [formGroup]="addUserForm">
+                <table class="fullwidth" cellspacing="0">
+                    <tr>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Name" id="firstname" formControlName="name">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Created by" id="lastname" formControlName="createdBy">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Created On" type="date" id="lastname" formControlName="createdOn"></mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Created On" id="firstname" formControlName="createdOn">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Version" id="lastname" formControlName="version">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Life Cycle" type="datetime" id="lastname"
+                                    formControlName="lifeCycle">
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Status" id="firstname" formControlName="status">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Language" id="lastname" formControlName="language">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Ready for Publishing" type="datetime" id="lastname"
+                                    formControlName="readyForPublish">
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Bookmarks edited" id="firstname"
+                                    formControlName="bookmarksEdited">
+                            </mat-form-field>
+                        </td>
+                        <td>
+                            <mat-form-field class="fullwidth">
+                                <input matInput placeholder="Tag" id="lastname" formControlName="tag">
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    <button class="create-template" *ngIf="!(this.selectedUserIndex > -1)" (click)="onSubmit()" type="submit"
+                        md-raised-button>Save</button>
+                    <button class="create-template" *ngIf="(this.selectedUserIndex > -1)" (click)="updateUser()" type="submit"
+                        md-raised-button>Update</button>
+                </p>
+            </form>
+        </div>
+        <div class="col-sm">
+            <div class="pdf-area">
+                <h1>PDF file will load here....</h1>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+
+.container{
+    padding: 10px;
+}
+.breadCrums{
+    width: auto;
+    height: 25Px;
+}
+h1{
+    text-align: center;
+    
+}
+.pdf-area{
+    border: 1px solid #E8E8E8;
+    background-color: darkgray;
+    border-radius: 7px;
+    height: 100%;
+    padding: 8px;
+    box-shadow: 0px 0px 7px rgba(87, 100, 126, 0.07);
+}
+.section{
+    border: 5px solid #E8E8E8;
+}
+.create-template{
+    text-align: right;
+    background-color: #CF682F;
+    color: white;
+  }

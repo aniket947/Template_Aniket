@@ -1,0 +1,35 @@
+<mat-card>
+  <mat-card-title><img src="./../../assets/logo.PNG"></mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="signInForm">
+      <p>
+        <mat-form-field>
+          <input type="text" matInput placeholder="Username" formControlName="username">
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field>
+          <input type="password" matInput placeholder="Password" formControlName="password">
+        </mat-form-field>
+      </p>
+
+      <p *ngIf="invalidCredentials" class="error">
+        <span>Invalid credentials. please try again</span>
+      </p>
+
+      <p class="btn-signIn">
+        <button class="w100p" (click)="signIn()" type="submit" mat-button>Sign In</button>
+      </p>
+
+      <p class="btn-forgot">
+        <a>Forgot Password?</a>
+      </p>
+
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<div class="footer">
+  <a>@Copyright Dyaz Innovate {{currentYear}}. All rights reserved.</a>
+</div>
